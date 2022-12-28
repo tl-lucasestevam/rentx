@@ -4,9 +4,12 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "storybook-addon-next",
+    "@storybook/addon-actions",
   ],
-  framework: "@storybook/react",
+  framework: {
+    name: "@storybook/nextjs",
+    options: {},
+  },
   core: {
     builder: "@storybook/builder-webpack5",
   },
