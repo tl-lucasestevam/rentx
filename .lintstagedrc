@@ -1,0 +1,7 @@
+{
+  "*.{ts, tsx}": [
+    "jest --bail --findRelatedTests --passWithNoTests",
+    "prettier --write",
+    "eslint --fix"
+  ]
+}

@@ -1,0 +1,8 @@
+/*.js
+/*.ts
+.husky
+cypress
+node_modules
+build
+dist
+package.json
