@@ -12,7 +12,8 @@ module.exports = {
   setupFilesAfterEnv: ["./__tests__/setup.ts"],
   moduleNameMapper: {
     "\\.(scss|css|sass)$": "identity-obj-proxy",
-    " ^~(.*)$": "<rootDir>/$1",
+    "^~(.*)$": "<rootDir>/src/$1",
+    '@next/font/(.*)': require.resolve('next/dist/build/jest/__mocks__/nextFontMock.js'),
   },
   testMatch: ["<rootDir>/src/**/**/*.(test|spec).ts(x)"],
 };
